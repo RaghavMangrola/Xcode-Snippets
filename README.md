@@ -1,0 +1,1 @@
+Xcode snippets are located at `~/Library/Developer/Xcode/UserData/CodeSnippets`

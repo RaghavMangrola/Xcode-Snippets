@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>tbvc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import Foundation
+import UIKit
+
+class &lt;#View#&gt;Controller: UIViewController {
+
+    // MARK: - Enums
+
+    // MARK: - Constants
+
+    let viewModel: &lt;#View#&gt;Model
+
+    // MARK: - IBOutlets
+
+    // MARK: - Weak Vars
+
+    // MARK: - Public Variables
+
+    // MARK: - Private Variables
+
+    // MARK: - Init
+
+    init(viewModel: &lt;#View#&gt;Model) {
+        self.viewModel = viewModel
+        super.init(nibName: "&lt;#View#&gt;", bundle: nil)
+        self.viewModel.delegate = self
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) is not supported")
+    }
+
+    // MARK: - View Life Cycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        viewModel.viewDidLoad()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.viewWillAppear()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        viewModel.viewDidAppear()
+    }
+
+    // MARK: - IBActions
+
+    // MARK: - Instance Methods
+
+}
+
+// MARK: - Extension: &lt;#View#&gt;ModelDelegate
+extension &lt;#View#&gt;Controller: &lt;#View#&gt;ModelDelegate {
+
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4D81B2D4-BF10-470D-924E-F1A34B031054</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Ticket Block View Controller</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

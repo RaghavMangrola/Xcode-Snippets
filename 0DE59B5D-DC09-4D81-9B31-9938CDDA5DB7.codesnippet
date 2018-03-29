@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>tbvm</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import Foundation
+
+protocol &lt;#View#&gt;ModelType {
+    weak var delegate: &lt;#View#&gt;ModelDelegate? { get set }
+    weak var coordinatorDelegate: &lt;#View#&gt;ModelCoordinatorDelegate? { get set }
+}
+
+protocol &lt;#View#&gt;ModelDelegate: class {
+
+}
+
+protocol &lt;#View#&gt;ModelCoordinatorDelegate: class {
+
+}
+
+final class &lt;#View#&gt;Model: &lt;#View#&gt;ModelType {
+
+    weak var delegate: &lt;#View#&gt;ModelDelegate?
+    weak var coordinatorDelegate: &lt;#View#&gt;ModelCoordinatorDelegate?
+
+    private let restClient: RestClientInterface
+    private let trackingManager: TrackingManagerInterface
+    private let databaseAccess: DatabaseAccessProtocol
+
+    private init() {
+        fatalError()
+    }
+
+    init(restClient: RestClientInterface, trackingManager: TrackingManagerInterface, databaseAccess: DatabaseAccessProtocol) {
+        self.restClient = restClient
+        self.trackingManager = trackingManager
+        self.databaseAccess = databaseAccess
+    }
+
+    public func viewDidLoad() {
+
+    }
+
+    public func viewWillAppear() {
+
+    }
+
+    public func viewDidAppear() {
+
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0DE59B5D-DC09-4D81-9B31-9938CDDA5DB7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>TicketBlock View Model</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
